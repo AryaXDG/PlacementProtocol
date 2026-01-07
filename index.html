@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCS Prime | Zero to Hero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="hero-section">
+            <div class="stats-board">
+                <div class="stat-item">
+                    <div class="stat-label">CURRENT STRIKE</div>
+                    <div class="stat-value" id="streak-count">0</div>
+                </div>
+                <div class="stat-item center-item">
+                    <div class="stat-label">LIVES</div>
+                    <div class="hearts-container" id="lives-container">
+                        </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">MAX STRIKE</div>
+                    <div class="stat-value" id="max-streak">0</div>
+                </div>
+            </div>
+            
+            </header>
+
+        <div class="controls">
+            <button class="phase-btn active" onclick="switchPhase('ninja')">NINJA (Base)</button>
+            <button class="phase-btn" onclick="switchPhase('digital')">DIGITAL (Adv)</button>
+            <button class="phase-btn" onclick="switchPhase('prime')">PRIME (Expert)</button>
+        </div>
+
+        <section class="phase-section">
+            <ul class="task-list" id="current-list">
+                </ul>
+        </section>
+
+        <footer>
+            <button onclick="resetProgress()" class="reset-btn">SYSTEM RESET</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
