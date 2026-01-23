@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCS Prime | Zero to Hero</title>
+    <title>PlacementProtocol</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,10 @@
 
     <div class="container">
         
+        <div class="brand-header">
+            <h1 class="brand-title">PlacementProtocol</h1>
+        </div>
+
         <header class="hero-section">
             <div class="stats-board">
                 <div class="stat-item">
@@ -22,29 +26,33 @@
                 <div class="stat-item center-item">
                     <div class="stat-label">LIVES</div>
                     <div class="hearts-container" id="lives-container">
-                        </div>
+                    </div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-label">MAX STRIKE</div>
                     <div class="stat-value" id="max-streak">0</div>
                 </div>
             </div>
-            
-            </header>
+        </header>
 
         <div class="controls">
-            <button class="phase-btn active" onclick="switchPhase('ninja')">NINJA (Base)</button>
-            <button class="phase-btn" onclick="switchPhase('digital')">DIGITAL (Adv)</button>
-            <button class="phase-btn" onclick="switchPhase('prime')">PRIME (Expert)</button>
+            <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center; width:100%;">
+                <button class="phase-btn active" onclick="switchPhase('ninja')">NINJA</button>
+                <button class="phase-btn" onclick="switchPhase('digital')">DIGITAL</button>
+                <button class="phase-btn" onclick="switchPhase('prime')">PRIME</button>
+                <button class="phase-btn" onclick="switchPhase('aptitude')">APTITUDE</button>
+                <button class="phase-btn" onclick="switchPhase('cs_fundamentals')">THEORY</button>
+            </div>
         </div>
 
         <section class="phase-section">
             <ul class="task-list" id="current-list">
-                </ul>
+            </ul>
         </section>
 
         <footer>
             <button onclick="resetProgress()" class="reset-btn">SYSTEM RESET</button>
+            <div class="creator-credit">Created by Arya Dasgupta</div>
         </footer>
     </div>
 
