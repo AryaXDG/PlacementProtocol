@@ -132,7 +132,7 @@ const roadmapData = {
         }
     ],
 
-aptitude: [
+    aptitude: [
     {
       "category": "Phase 1: Foundation & Speed (The Prerequisite)",
       "desc": "Do these first. They build the calculation speed and logic needed for 80% of the exam.",
@@ -149,8 +149,35 @@ aptitude: [
             "Pattern 1: Find unit digit of 234^105.",
             "Pattern 2: Remainder of (17^23 + 29^23) / 23."
           ],
-          "link": "https://www.indiabix.com/aptitude/numbers/",
-          "video_link": "https://www.youtube.com/watch?v=KSeIr93uxjk"
+          "link": "https://www.indiabix.com/aptitude/numbers/"
+        },
+        {
+          "topic": "Averages",
+          "importance": "High",
+          "details": "Weighted averages and replacement logic. Critical for DI.",
+          "formulas": [
+            "Avg Speed = Total Dist / Total Time.",
+            "New Avg = Old Avg + (Difference/n)."
+          ],
+          "patterns": [
+            "Pattern 1: Teacher leaves, avg age drops.",
+            "Pattern 2: Batting average calculations."
+          ],
+          "link": "https://www.indiabix.com/aptitude/average/"
+        },
+        {
+          "topic": "Problems on Ages",
+          "importance": "High",
+          "details": "Linear equations based on age ratios.",
+          "formulas": [
+            "If ratio is x:y, ages are kx and ky.",
+            "After n years: (kx+n)/(ky+n) = new ratio."
+          ],
+          "patterns": [
+            "Pattern 1: Father is 3 times son's age.",
+            "Pattern 2: Ratio of ages 5 years ago vs 5 years hence."
+          ],
+          "link": "https://www.indiabix.com/aptitude/problems-on-ages/"
         },
         {
           "topic": "Statistics (TCS Mandatory)",
@@ -165,8 +192,7 @@ aptitude: [
             "Pattern 1: Calculate Variance of {2, 4, 6, 8}.",
             "Pattern 2: Find Median of unsorted stream."
           ],
-          "link": "https://www.geeksforgeeks.org/standard-deviation-formulas-and-equations/",
-          "video_link": "https://www.youtube.com/watch?v=VFhVa99wdf8"
+          "link": "https://www.geeksforgeeks.org/standard-deviation-formulas-and-equations/"
         },
         {
           "topic": "Simplification & Logarithms",
@@ -180,8 +206,7 @@ aptitude: [
             "Pattern 1: Value of sqrt(12 + sqrt(12 + ...)).",
             "Pattern 2: Solve for x in log equations."
           ],
-          "link": "https://www.indiabix.com/aptitude/simplification/",
-          "video_link": "https://www.youtube.com/watch?v=yW6hNf-1O2c"
+          "link": "https://www.indiabix.com/aptitude/simplification/"
         },
         {
           "topic": "HCF and LCM",
@@ -193,8 +218,7 @@ aptitude: [
           "patterns": [
             "Pattern 1: Bell tolling intervals (LCM application)."
           ],
-          "link": "https://www.indiabix.com/aptitude/hcf-and-lcm/",
-          "video_link": "https://www.youtube.com/watch?v=4L-QdK7g9iY"
+          "link": "https://www.indiabix.com/aptitude/hcf-and-lcm/"
         }
       ]
     },
@@ -213,8 +237,7 @@ aptitude: [
             "Pattern 1: Election (Valid vs Invalid votes).",
             "Pattern 2: Price rises by 20%, reduce consumption?"
           ],
-          "link": "https://www.indiabix.com/aptitude/percentage/",
-          "video_link": "https://www.youtube.com/watch?v=5pvrKPgLBqw"
+          "link": "https://www.indiabix.com/aptitude/percentage/"
         },
         {
           "topic": "Data Interpretation (DI)",
@@ -228,8 +251,7 @@ aptitude: [
             "Pattern 1: Missing Data Tables.",
             "Pattern 2: Complex calculation heavy charts."
           ],
-          "link": "https://www.indiabix.com/data-interpretation/table-charts/",
-          "video_link": "https://www.youtube.com/watch?v=FBhLuolwuD8"
+          "link": "https://www.indiabix.com/data-interpretation/table-charts/"
         },
         {
           "topic": "Profit, Loss and Discount",
@@ -243,8 +265,7 @@ aptitude: [
             "Pattern 1: Buy 2 Get 1 Free.",
             "Pattern 2: Dishonest weights used by grocer."
           ],
-          "link": "https://www.indiabix.com/aptitude/profit-and-loss/",
-          "video_link": "https://www.youtube.com/watch?v=8488X53d6Yc"
+          "link": "https://www.indiabix.com/aptitude/profit-and-loss/"
         },
         {
           "topic": "Time and Work",
@@ -258,8 +279,20 @@ aptitude: [
             "Pattern 1: Leaving work before completion.",
             "Pattern 2: Men, Women, Children efficiency."
           ],
-          "link": "https://www.indiabix.com/aptitude/time-and-work/",
-          "video_link": "https://www.youtube.com/watch?v=0Hqd1M0UuAQ"
+          "link": "https://www.indiabix.com/aptitude/time-and-work/"
+        },
+        {
+          "topic": "Pipes and Cisterns",
+          "importance": "High",
+          "details": "Inlet/Outlet concept (Negative work).",
+          "formulas": [
+            "Net Part filled = (1/A) + (1/B) - (1/Leak)."
+          ],
+          "patterns": [
+            "Pattern 1: Leak empties full tank in X hours.",
+            "Pattern 2: Alternating pipes."
+          ],
+          "link": "https://www.indiabix.com/aptitude/pipes-and-cistern/"
         },
         {
           "topic": "Ratios, Mixtures & Alligations",
@@ -273,8 +306,20 @@ aptitude: [
             "Pattern 1: Milk/Water repeated replacement.",
             "Pattern 2: Mixing two varieties of rice."
           ],
-          "link": "https://www.indiabix.com/aptitude/alligation-or-mixture/",
-          "video_link": "https://www.youtube.com/watch?v=1F4f_41G_3g"
+          "link": "https://www.indiabix.com/aptitude/alligation-or-mixture/"
+        },
+        {
+          "topic": "Partnership",
+          "importance": "Med-High",
+          "details": "Profit sharing based on Investment * Time.",
+          "formulas": [
+            "P1 : P2 = (I1 * T1) : (I2 * T2)."
+          ],
+          "patterns": [
+            "Pattern 1: Active partner salary + Profit share.",
+            "Pattern 2: Joining business after X months."
+          ],
+          "link": "https://www.indiabix.com/aptitude/partnership/"
         },
         {
           "topic": "Time, Speed and Distance",
@@ -288,8 +333,22 @@ aptitude: [
             "Pattern 1: Police catching a thief.",
             "Pattern 2: Train crossing a bridge."
           ],
-          "link": "https://www.indiabix.com/aptitude/speed-time-and-distance/",
-          "video_link": "https://www.youtube.com/watch?v=rhSxQ4ieAYc"
+          "link": "https://www.indiabix.com/aptitude/speed-time-and-distance/"
+        },
+        {
+          "topic": "Boats and Streams",
+          "importance": "High",
+          "details": "Upstream/Downstream logic.",
+          "formulas": [
+            "Downstream (D) = B + S.",
+            "Upstream (U) = B - S.",
+            "Boat Speed = (D+U)/2."
+          ],
+          "patterns": [
+            "Pattern 1: Time taken to row against stream.",
+            "Pattern 2: Man swims A to B and back."
+          ],
+          "link": "https://www.indiabix.com/aptitude/boats-and-streams/"
         },
         {
           "topic": "Mensuration (Area & Volume)",
@@ -303,8 +362,7 @@ aptitude: [
             "Pattern 1: Wire bent into Circle then Square.",
             "Pattern 2: Melting spheres into a big cone."
           ],
-          "link": "https://www.indiabix.com/aptitude/mensuration/",
-          "video_link": "https://www.youtube.com/watch?v=A2G-M7T7zC8"
+          "link": "https://www.indiabix.com/aptitude/mensuration/"
         }
       ]
     },
@@ -312,6 +370,21 @@ aptitude: [
       "category": "Phase 3: The Rank Deciders (Prime/Digital Profile)",
       "desc": "These topics separate the high-paid profiles from the average ones.",
       "modules": [
+        {
+          "topic": "Progressions (AP, GP, HP)",
+          "importance": "Critical (Digital Profile)",
+          "details": "Sequences and Series.",
+          "formulas": [
+            "AP: Tn = a + (n-1)d.",
+            "GP: Tn = a * r^(n-1).",
+            "Sum of n terms AP = n/2[2a + (n-1)d]."
+          ],
+          "patterns": [
+            "Pattern 1: Find the 10th term of the series.",
+            "Pattern 2: Sum of infinite GP."
+          ],
+          "link": "https://www.indiabix.com/aptitude/progression/"
+        },
         {
           "topic": "Data Sufficiency",
           "importance": "Critical (TCS Advanced)",
@@ -322,8 +395,7 @@ aptitude: [
           "patterns": [
             "Pattern 1: Is 'x' > 'y'? (Statement 1 & 2)."
           ],
-          "link": "https://www.indiabix.com/data-sufficiency/questions-and-answers/",
-          "video_link": "https://www.youtube.com/watch?v=yW_uH3K4yTU"
+          "link": "https://www.indiabix.com/data-sufficiency/questions-and-answers/"
         },
         {
           "topic": "Simple and Compound Interest",
@@ -337,11 +409,24 @@ aptitude: [
             "Pattern 1: Difference between SI and CI.",
             "Pattern 2: Installment payments."
           ],
-          "link": "https://www.indiabix.com/aptitude/compound-interest/",
-          "video_link": "https://www.youtube.com/watch?v=s4N9l3lB1Xw"
+          "link": "https://www.indiabix.com/aptitude/compound-interest/"
         },
         {
-          "topic": "Permutation & Probability",
+          "topic": "Permutation and Combination",
+          "importance": "High",
+          "details": "Arrangements (Order matters) and Selections (Order doesn't matter).",
+          "formulas": [
+            "Permutation: nPr = n! / (n-r)!",
+            "Combination: nCr = n! / (r!(n-r)!)"
+          ],
+          "patterns": [
+            "Pattern 1: How many words can be formed from 'LEADER'.",
+            "Pattern 2: Selecting 3 balls from a bag of 10."
+          ],
+          "link": "https://www.indiabix.com/aptitude/permutation-and-combination/"
+        },
+        {
+          "topic": "Probability",
           "importance": "Med",
           "details": "Counting principles and chance.",
           "formulas": [
@@ -352,8 +437,7 @@ aptitude: [
             "Pattern 1: Arranging letters of 'APPLE'.",
             "Pattern 2: Dice/Coin probability."
           ],
-          "link": "https://www.indiabix.com/aptitude/probability/",
-          "video_link": "https://www.youtube.com/watch?v=40X9Si42Aes"
+          "link": "https://www.indiabix.com/aptitude/probability/"
         },
         {
           "topic": "Geometry & Coordinate Geo",
@@ -367,8 +451,7 @@ aptitude: [
             "Pattern 1: Shaded region area.",
             "Pattern 2: Slope of line joining two points."
           ],
-          "link": "https://www.geeksforgeeks.org/coordinate-geometry/",
-          "video_link": "https://www.youtube.com/watch?v=IrlTj7m2t1o"
+          "link": "https://www.geeksforgeeks.org/coordinate-geometry/"
         }
       ]
     },
@@ -386,8 +469,7 @@ aptitude: [
           "patterns": [
             "Pattern 1: SEND + MORE = MONEY."
           ],
-          "link": "https://www.geeksforgeeks.org/solving-cryptarithmetic-puzzles/",
-          "video_link": "https://www.youtube.com/watch?v=XxkQIQlvGCM"
+          "link": "https://www.geeksforgeeks.org/solving-cryptarithmetic-puzzles/"
         },
         {
           "topic": "Clocks and Calendars",
@@ -400,8 +482,7 @@ aptitude: [
             "Pattern 1: Angle between hands.",
             "Pattern 2: Day of the week."
           ],
-          "link": "https://www.indiabix.com/aptitude/calendar/",
-          "video_link": "https://www.youtube.com/watch?v=encpL9XUfvw"
+          "link": "https://www.indiabix.com/aptitude/calendar/"
         },
         {
           "topic": "Quadratic Equations",
@@ -413,8 +494,7 @@ aptitude: [
           "patterns": [
             "Pattern 1: x²... vs y²... (x > y)."
           ],
-          "link": "https://www.indiabix.com/aptitude/quadratic-equations/",
-          "video_link": "https://www.youtube.com/watch?v=9yY9Qc7uXyU"
+          "link": "https://www.indiabix.com/aptitude/quadratic-equations/"
         },
         {
           "topic": "Visual Reasoning (Cubes)",
@@ -426,112 +506,185 @@ aptitude: [
           "patterns": [
             "Pattern 1: Unfolded Cube logic."
           ],
-          "link": "https://www.indiabix.com/non-verbal-reasoning/cube-and-dice/",
-          "video_link": "https://www.youtube.com/watch?v=8488X53d6Yc"
+          "link": "https://www.indiabix.com/non-verbal-reasoning/cube-and-dice/"
         }
       ]
     }
-  ],
+    ],
 
     cs_fundamentals: [
+    {
+      "subject": "Object-Oriented Programming (OOP)",
+      "desc": "The structure of code. Focus on 'Memory' and 'Design'.",
+      "modules": [
         {
-            subject: "Object-Oriented Programming (OOP)",
-            desc: "The structure of code. Focus on 'Memory' and 'Design'.",
-            modules: [
-                {
-                    topic: "Core Pillars & Memory Management",
-                    details: "Polymorphism (Runtime vs Compile-time), Encapsulation, Stack vs Heap memory.",
-                    link: "https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/",
-                    faq: ["Diff between Overloading and Overriding?", "Structure of Java/C++ Object in memory?", "What triggers a StackOverflowError?"]
-                },
-                {
-                    topic: "Keywords & Abstract Logic",
-                    details: "Interface vs Abstract Class, Final/Static/Super keywords, Copy Constructors.",
-                    link: "https://www.javatpoint.com/java-oops-concepts",
-                    faq: ["Can an Interface have a constructor?", "Why is the main method static?", "Deep Copy vs Shallow Copy?"]
-                },
-                {
-                    topic: "Design Patterns & SOLID (Hero Level)",
-                    details: "Singleton, Factory Pattern, and the 5 SOLID principles.",
-                    link: "https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/",
-                    faq: ["Write code for a Singleton class (Double-checked locking).", "Why use Factory pattern?", "Explain Dependency Injection."]
-                }
-            ]
+          "topic": "1. Core Pillars & Memory Management",
+          "details": "Polymorphism (Runtime vs Compile-time), Encapsulation, Stack vs Heap memory visualization.",
+          "faq": [
+            "Diff between Overloading and Overriding?",
+            "Structure of Java/C++ Object in memory?",
+            "What triggers a StackOverflowError vs OutOfMemoryError?"
+          ]
         },
         {
-            subject: "Database Management Systems (DBMS)",
-            desc: "Data integrity and speed. Focus on 'Keys' and 'ACID'.",
-            modules: [
-                {
-                    topic: "Normalization & Keys",
-                    details: "Keys (Primary, Foreign, Unique, Candidate, Composite). 1NF to BCNF.",
-                    link: "https://www.guru99.com/dbms-keys.html",
-                    faq: ["Diff between Primary Key and Unique Key?", "Can Foreign Key be NULL?", "Why is 3NF better than 2NF?"]
-                },
-                {
-                    topic: "SQL Queries & Transactions",
-                    details: "ACID Properties. Joins (Inner, Outer, Self). Aggregate Functions (GROUP BY, HAVING).",
-                    link: "https://www.w3schools.com/sql/sql_join.asp",
-                    faq: ["Order of execution in SQL (WHERE vs HAVING)?", "Find the 3rd highest salary.", "What is a 'Dirty Read'?"]
-                },
-                {
-                    topic: "NoSQL & Indexing (Hero Level)",
-                    details: "SQL vs NoSQL (CAP Theorem). Clustered vs Non-Clustered Indexing.",
-                    link: "https://www.geeksforgeeks.org/sql-vs-nosql-which-one-is-better-to-use/",
-                    faq: ["When to use MongoDB over MySQL?", "How does B-Tree Indexing make search faster?", "Explain 'Eventual Consistency'."]
-                }
-            ]
+          "topic": "2. Keywords & Abstract Logic",
+          "details": "Interface vs Abstract Class, Final/Static/Super/This keywords, Copy Constructors, Immutable Classes.",
+          "faq": [
+            "Can an Interface have a constructor?",
+            "Why is the main method static?",
+            "Deep Copy vs Shallow Copy?",
+            "How to create a custom Immutable class?"
+          ]
         },
         {
-            subject: "Operating Systems (OS)",
-            desc: "Resource management. Focus on 'Scheduling' and 'Deadlocks'.",
-            modules: [
-                {
-                    topic: "Process Scheduling & Threads",
-                    details: "Process State Diagram. Scheduling Algos (FCFS, Round Robin, SJF). User vs Kernel Threads.",
-                    link: "https://www.guru99.com/process-scheduling.html",
-                    faq: ["Diff between Preemptive and Non-Preemptive scheduling?", "Why is Round Robin good for Time Sharing?", "Process vs Thread context switch cost."]
-                },
-                {
-                    topic: "Memory Management & Paging",
-                    details: "Virtual Memory, Paging, Segmentation, TLB, Thrashing.",
-                    link: "https://www.geeksforgeeks.org/virtual-memory-in-operating-system/",
-                    faq: ["Why do we need Virtual Memory?", "What is a Page Fault?", "Explain Internal vs External Fragmentation."]
-                },
-                {
-                    topic: "Concurrency & Deadlock (Hero Level)",
-                    details: "Mutex vs Semaphore. Deadlock Necessary Conditions. Banker's Algorithm.",
-                    link: "https://www.javatpoint.com/os-deadlock-introduction",
-                    faq: ["What is a Race Condition?", "Dining Philosophers Problem logic.", "How to recover from a Deadlock?"]
-                }
-            ]
+          "topic": "3. Design Patterns & SOLID",
+          "details": "Singleton, Factory, Observer, Decorator Patterns. The 5 SOLID principles.",
+          "faq": [
+            "Write code for a Singleton class (Double-checked locking).",
+            "Why use Factory pattern over simple instantiation?",
+            "Explain Dependency Injection and Inversion of Control."
+          ]
         },
         {
-            subject: "Computer Networks (CN)",
-            desc: "Communication. Focus on 'HTTP' and 'TCP/IP'.",
-            modules: [
-                {
-                    topic: "The Layers (OSI vs TCP/IP)",
-                    details: "Functions of all 7 layers. Headers and Data Units (Packet, Frame, Segment).",
-                    link: "https://www.cloudflare.com/learning/ddos/glossary/osi-model/",
-                    faq: ["What happens when you type google.com? (DNS Resolution)", "Router vs Switch vs Hub?", "Why is UDP faster than TCP?"]
-                },
-                {
-                    topic: "HTTP & Web Protocols",
-                    details: "HTTP Methods (GET, POST, PUT, DELETE). Status Codes (200, 401, 403, 404, 500). HTTPS (SSL/TLS).",
-                    link: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status",
-                    faq: ["Diff between GET and POST?", "What is a Stateless Protocol?", "How does HTTPS handshake work?"]
-                },
-                {
-                    topic: "IP Addressing & Subnetting (Hero Level)",
-                    details: "IPv4 vs IPv6. Subnet Masks. CIDR notation. NAT.",
-                    link: "https://www.geeksforgeeks.org/introduction-to-subnetting/",
-                    faq: ["Calculate number of hosts in /24 subnet.", "Public vs Private IP range.", "What is the Loopback Address (127.0.0.1)?"]
-                }
-            ]
+          "topic": "4. Exception Handling & Garbage Collection (Advanced)",
+          "details": "Checked vs Unchecked Exceptions. Try-Catch-Finally flow. Garbage Collection algorithms (Mark and Sweep). Generics.",
+          "faq": [
+            "What happens if you return a value from both try and finally blocks?",
+            "How does Garbage Collection work in Java/Python?",
+            "Difference between 'throw' and 'throws'?"
+          ]
         }
+      ]
+    },
+    {
+      "subject": "Operating Systems (OS)",
+      "desc": "Resource management. Focus on 'Scheduling', 'Deadlocks' and 'Files'.",
+      "modules": [
+        {
+          "topic": "1. Process Scheduling & Threads",
+          "details": "Process State Diagram. Scheduling Algos (FCFS, Round Robin, SJF, Multilevel Queue). User vs Kernel Threads. Context Switching.",
+          "faq": [
+            "Diff between Preemptive and Non-Preemptive scheduling?",
+            "Why is Round Robin good for Time Sharing systems?",
+            "What data is saved during a Context Switch?"
+          ]
+        },
+        {
+          "topic": "2. Memory Management & Paging",
+          "details": "Virtual Memory, Paging, Segmentation, TLB, Thrashing, Page Replacement Algos (LRU, Optimal).",
+          "faq": [
+            "Why do we need Virtual Memory?",
+            "What is a Page Fault and how does OS handle it?",
+            "Explain Internal vs External Fragmentation."
+          ]
+        },
+        {
+          "topic": "3. Concurrency & Deadlock",
+          "details": "Mutex vs Semaphore (Binary/Counting). Deadlock Necessary Conditions. Banker's Algorithm. Producer-Consumer Problem.",
+          "faq": [
+            "What is a Race Condition?",
+            "Dining Philosophers Problem logic.",
+            "How to recover from a Deadlock?"
+          ]
+        },
+        {
+          "topic": "4. File Systems & Disk Management (Advanced)",
+          "details": "File Allocation Methods (Contiguous, Linked, Indexed). Unix Inodes. Disk Scheduling (SCAN, C-SCAN). RAID levels.",
+          "faq": [
+            "What is an Inode in Unix?",
+            "Diff between Hard Link and Soft Link?",
+            "Explain RAID 0 vs RAID 1 vs RAID 5."
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Database Management Systems (DBMS)",
+      "desc": "Data integrity and speed. Focus on 'Keys', 'ACID', and 'Scaling'.",
+      "modules": [
+        {
+          "topic": "1. Normalization & Keys",
+          "details": "Keys (Primary, Foreign, Unique, Candidate, Composite). Normal Forms (1NF, 2NF, 3NF, BCNF). Anomalies.",
+          "faq": [
+            "Diff between Primary Key and Unique Key?",
+            "Can Foreign Key be NULL?",
+            "Why is 3NF better than 2NF? Give an example of Transitive Dependency."
+          ]
+        },
+        {
+          "topic": "2. SQL Queries & Transactions",
+          "details": "ACID Properties. Isolation Levels. Joins (Inner, Left, Right, Cross). Aggregate Functions & Windows Functions.",
+          "faq": [
+            "Order of execution in SQL (WHERE vs GROUP BY vs HAVING)?",
+            "Write a query to find the 3rd highest salary without TOP/LIMIT.",
+            "What is a 'Dirty Read' and which Isolation Level prevents it?"
+          ]
+        },
+        {
+          "topic": "3. Indexing & Optimization",
+          "details": "Clustered vs Non-Clustered Indexing. B-Trees vs B+ Trees. Query Optimization strategies.",
+          "faq": [
+            "How does B-Tree Indexing make search faster (O(log n))?",
+            "When does Indexing hurt performance?",
+            "Difference between Delete, Truncate, and Drop?"
+          ]
+        },
+        {
+          "topic": "4. Advanced DB & Scaling (System Design Prep)",
+          "details": "SQL vs NoSQL (CAP Theorem). Sharding vs Partitioning. Replication (Master-Slave). Stored Procedures & Triggers.",
+          "faq": [
+            "When to use MongoDB over MySQL?",
+            "Explain Horizontal vs Vertical Scaling.",
+            "What are Views and Materialized Views?"
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Computer Networks (CN)",
+      "desc": "Communication. Focus on 'HTTP', 'TCP/IP', and 'Security'.",
+      "modules": [
+        {
+          "topic": "1. The Layers (OSI vs TCP/IP)",
+          "details": "Functions of all 7 layers. Headers and Data Units (Packet, Frame, Segment). Devices (Router, Switch).",
+          "faq": [
+            "What happens when you type google.com? (DNS Resolution flow)",
+            "Router vs Switch vs Hub?",
+            "Which layer guarantees end-to-end delivery?"
+          ]
+        },
+        {
+          "topic": "2. Transport Layer Deep Dive",
+          "details": "TCP vs UDP. TCP 3-Way Handshake & 4-Way Termination. Flow Control (Sliding Window) vs Congestion Control.",
+          "faq": [
+            "Why is UDP faster than TCP (Streaming/Gaming)?",
+            "Explain the TCP Handshake states (SYN, SYN-ACK, ACK).",
+            "What is the 'Slow Start' phase in Congestion Control?"
+          ]
+        },
+        {
+          "topic": "3. HTTP & Web Protocols",
+          "details": "HTTP Methods (GET, POST, PUT, PATCH). Status Codes (2xx, 3xx, 4xx, 5xx). Cookies vs Sessions.",
+          "faq": [
+            "Diff between GET and POST (Idempotency)?",
+            "What is a Stateless Protocol?",
+            "How does HTTPS handshake work (SSL/TLS)?"
+          ]
+        },
+        {
+          "topic": "4. IP & Network Security (Advanced)",
+          "details": "IPv4 vs IPv6. Subnetting (CIDR). NAT. Firewalls. Symmetric vs Asymmetric Encryption. VPN.",
+          "faq": [
+            "Calculate number of hosts in /24 subnet.",
+            "Public vs Private IP range.",
+            "What is a DDoS attack and how to mitigate it?"
+          ]
+        }
+      ]
+    }
     ]
-};
+}
+
 
 // STATE & INIT
 let currentPhase = 'ninja';
@@ -685,15 +838,18 @@ function renderList() {
                     `;
                 }).join('');
 
-                const videoBtn = item.video_link 
-                    ? `<a href="${item.video_link}" target="_blank" class="practice-btn" style="background:#ef4444; margin-left:5px;">📺 Video</a>` 
-                    : '';
+                const materialsLink = "https://drive.google.com/drive/folders/1yjB9CKifzaKbRej35TRYO5gUuJabqzLu?usp=drive_link";
+                const videoPlaylistLink = "https://www.youtube.com/playlist?list=PLpyc33gOcbVA4qXMoQ5vmhefTruk5t9lt";
 
                 li.querySelector('.task-details').innerHTML = `
                     <p style="margin-bottom:10px; font-style:italic">${item.details}</p>
                     <div class="action-row">
                         <a href="${item.link}" target="_blank" class="practice-btn" style="background:#f59e0b">🧮 Practice</a>
-                        ${videoBtn} 
+                        
+                        <a href="${materialsLink}" target="_blank" class="practice-btn" style="background:#10b981; margin-left:5px;">📚 Materials</a>
+                        
+                        <a href="${videoPlaylistLink}" target="_blank" class="practice-btn" style="background:#ef4444; margin-left:5px;">📺 Video</a>
+                        
                         <button class="hint-btn" onclick="toggleHint(this)">📐 Cheat Sheet</button>
                     </div>
                     <div class="hint-text">
@@ -705,6 +861,7 @@ function renderList() {
                 `;
                 listContainer.appendChild(li);
             }
+            
             else {
                 const li = createListItem(id, isDone, item.topic, 'THEORY', 'badge-med');
                 
@@ -719,10 +876,12 @@ function renderList() {
                     `;
                 }).join('');
 
+                const csReadLink = "https://www.geeksforgeeks.org/blogs/prepare-cs-core-subjects-for-placements/";
+
                 li.querySelector('.task-details').innerHTML = `
                     <p style="margin-bottom:10px;">${item.details}</p>
                     <div class="action-row">
-                        <a href="${item.link}" target="_blank" class="practice-btn" style="background:#2563eb">📖 Read</a>
+                        <a href="${csReadLink}" target="_blank" class="practice-btn" style="background:#2563eb">📖 Read</a>
                         <button class="hint-btn" onclick="toggleHint(this)">❓ FAQs</button>
                     </div>
                     <div class="hint-text">
