@@ -39,7 +39,19 @@ const roadmapData = {
                 { t: "Isomorphic Strings", d: "Easy", time: "15m", prob: "Can map char s -> t.", hint: "Two HashMaps for bidirectional check.", link: "https://leetcode.com/problems/isomorphic-strings/" },
                 { t: "String Compression", d: "Med", time: "25m", prob: "Compress 'aabbc' to 'a2b2c'.", hint: "Two pointers reading & writing.", link: "https://leetcode.com/problems/string-compression/" }
             ]
+        },
+        {
+            topic: "Pattern 4: Extra Math, Simulation & Array Basics",
+            tasks: [
+                { t: "Palindrome Number", d: "Easy", time: "10m", prob: "Check if integer reads the same backward.", hint: "Reverse half the number to avoid overflow.", link: "https://leetcode.com/problems/palindrome-number/" },
+                { t: "Roman to Integer", d: "Easy", time: "15m", prob: "Convert Roman numeral to integer.", hint: "If current char < next char, subtract it; else add.", link: "https://leetcode.com/problems/roman-to-integer/" },
+                { t: "Fizz Buzz", d: "Easy", time: "5m", prob: "Print string representation of numbers with conditions.", hint: "Check % 15 == 0 first.", link: "https://leetcode.com/problems/fizz-buzz/" },
+                { t: "Pascal's Triangle", d: "Easy", time: "15m", prob: "Generate first numRows of Pascal's triangle.", hint: "row[i][j] = row[i-1][j-1] + row[i-1][j].", link: "https://leetcode.com/problems/pascals-triangle/" },
+                { t: "Squares of a Sorted Array", d: "Easy", time: "10m", prob: "Return squares sorted.", hint: "Two pointers: compare abs(start) and abs(end), fill from back.", link: "https://leetcode.com/problems/squares-of-a-sorted-array/" },
+                { t: "Find the Difference", d: "Easy", time: "10m", prob: "Find the added letter in string t.", hint: "XOR all characters in both strings, or use an array of size 26.", link: "https://leetcode.com/problems/find-the-difference/" }
+            ]
         }
+
     ],
     digital: [
         { 
@@ -87,6 +99,17 @@ const roadmapData = {
                  { t: "Lemonade Change", d: "Easy", time: "15m", prob: "Can give change?", hint: "Greedy simulation.", link: "https://leetcode.com/problems/lemonade-change/" },
                  { t: "N Meetings in One Room", d: "Med", time: "20m", prob: "Max meetings possible.", hint: "Sort by End Time. Greedy.", link: "https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1" }
              ]
+        },
+        {
+            topic: "Pattern 8: Extra Core Arrays, Strings & Prefix Sums",
+            tasks: [
+                { t: "3Sum", d: "Med", time: "30m", prob: "Find all unique triplets that sum to 0.", hint: "Sort array first. Iterate and use two pointers (left/right). Skip duplicates.", link: "https://leetcode.com/problems/3sum/" },
+                { t: "Product of Array Except Self", d: "Med", time: "25m", prob: "Array of products without division.", hint: "Calculate prefix products, then postfix products, multiply them.", link: "https://leetcode.com/problems/product-of-array-except-self/" },
+                { t: "Group Anagrams", d: "Med", time: "20m", prob: "Group anagrams together.", hint: "Sort the string to use as a HashMap key, or use a frequency string.", link: "https://leetcode.com/problems/group-anagrams/" },
+                { t: "Subarray Sum Equals K", d: "Med", time: "25m", prob: "Count contiguous subarrays summing to k.", hint: "HashMap tracking Prefix Sum frequencies.", link: "https://leetcode.com/problems/subarray-sum-equals-k/" },
+                { t: "Valid Sudoku", d: "Med", time: "25m", prob: "Determine if a 9x9 Sudoku board is valid.", hint: "Use HashSets for rows, cols, and 3x3 sub-boxes.", link: "https://leetcode.com/problems/valid-sudoku/" },
+                { t: "Longest Repeating Character Replacement", d: "Med", time: "30m", prob: "Longest substring with same letter after k changes.", hint: "Sliding window. Window length - max frequency <= k.", link: "https://leetcode.com/problems/longest-repeating-character-replacement/" }
+            ]
         }
     ],
     prime: [
@@ -128,6 +151,17 @@ const roadmapData = {
                 { t: "Subsets", d: "Med", time: "20m", prob: "Find all subsets.", hint: "Backtracking (Include/Exclude).", link: "https://leetcode.com/problems/subsets/" },
                 { t: "Permutations", d: "Med", time: "25m", prob: "All possible orderings.", hint: "Backtracking with Swap.", link: "https://leetcode.com/problems/permutations/" },
                 { t: "Lowest Common Ancestor", d: "Med", time: "20m", prob: "LCA in BST (or Binary Tree).", hint: "Split point logic.", link: "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/" }
+            ]
+        },
+        {
+            topic: "Pattern 12: Extra Prime Deciders (Hard Logic & Trees)",
+            tasks: [
+                { t: "Target Sum", d: "Med", time: "30m", prob: "Assign +/- to elements to reach target.", hint: "This is a 0/1 Knapsack variation. Memoization or Tabulation.", link: "https://leetcode.com/problems/target-sum/" },
+                { t: "Trapping Rain Water", d: "Hard", time: "35m", prob: "Compute how much water can be trapped.", hint: "Two Pointers (left/right max tracking) or monotonic stack.", link: "https://leetcode.com/problems/trapping-rain-water/" },
+                { t: "Minimum Window Substring", d: "Hard", time: "40m", prob: "Smallest substring containing all chars of t.", hint: "Sliding Window with two HashMaps tracking 'have' and 'need' counts.", link: "https://leetcode.com/problems/minimum-window-substring/" },
+                { t: "Word Search", d: "Med", time: "30m", prob: "Find if word exists in a grid.", hint: "DFS with backtracking. Mark visited cells to avoid loops.", link: "https://leetcode.com/problems/word-search/" },
+                { t: "Binary Tree Maximum Path Sum", d: "Hard", time: "35m", prob: "Max sum path between any two nodes.", hint: "Post-order traversal. Compute max(left), max(right), update global max.", link: "https://leetcode.com/problems/binary-tree-maximum-path-sum/" },
+                { t: "Clone Graph", d: "Med", time: "25m", prob: "Deep copy of a connected undirected graph.", hint: "HashMap mapping old node to new node. DFS/BFS.", link: "https://leetcode.com/problems/clone-graph/" }
             ]
         }
     ],
@@ -515,7 +549,7 @@ const roadmapData = {
     cs_fundamentals: [
     {
       "subject": "Object-Oriented Programming (OOP)",
-      "desc": "The structure of code. Focus on 'Memory' and 'Design'.",
+      "desc": "The structure of code. Focus on 'Memory', 'Design', and 'Execution'.",
       "modules": [
         {
           "topic": "1. Core Pillars & Memory Management",
@@ -546,23 +580,59 @@ const roadmapData = {
           ]
         },
         {
-          "topic": "4. Exception Handling & Garbage Collection (Advanced)",
+          "topic": "4. Exception Handling & Garbage Collection",
           "details": "Checked vs Unchecked Exceptions. Try-Catch-Finally flow. Garbage Collection algorithms (Mark and Sweep). Generics.",
           "faq": [
             "What happens if you return a value from both try and finally blocks?",
-            "How does Garbage Collection work in Java/Python?",
+            "How does Garbage Collection work in Java/Python/Go?",
             "Difference between 'throw' and 'throws'?"
+          ]
+        },
+        {
+          "topic": "5. Internal Memory & V-Tables (Advanced)",
+          "details": "Virtual Functions, V-Table and V-Ptr. Memory leaks and dangling pointers. Pass by Value vs Reference vs Pointer.",
+          "faq": [
+            "How does the compiler resolve virtual functions at runtime?",
+            "What is a dangling pointer and how do you prevent it?",
+            "Explain the diamond problem in multiple inheritance and its solution."
+          ]
+        },
+        {
+          "topic": "6. Advanced Design Patterns",
+          "details": "Behavioral & Structural Patterns: Strategy, Command, Adapter, and Facade patterns. Thread-safe architectures.",
+          "faq": [
+            "When would you use a Strategy pattern over simple if-else blocks?",
+            "Write a thread-safe Singleton class.",
+            "How does the Adapter pattern work in integrating legacy code?"
+          ]
+        },
+        {
+          "topic": "7. Concurrency & Multithreading in OOP",
+          "details": "Thread safety, volatile keyword, synchronized blocks, Locks/Mutexes in object states, Thread Pools.",
+          "faq": [
+            "How do you make a class completely thread-safe?",
+            "What is the 'volatile' keyword and how does it affect CPU caching?",
+            "Explain the concept of a Thread Pool and why it's better than creating raw threads."
+          ]
+        },
+        {
+          "topic": "8. Language Internals (C/C++/Java/Go Context)",
+          "details": "JVM Architecture, JIT Compiler. C++ Smart Pointers (unique_ptr, shared_ptr). Go Goroutines vs OS Threads.",
+          "faq": [
+            "Explain the difference between a unique_ptr and a shared_ptr in C++.",
+            "How does the JIT compiler optimize code at runtime?",
+            "Why are Goroutines cheaper than traditional OS threads?"
           ]
         }
       ]
     },
     {
       "subject": "Operating Systems (OS)",
-      "desc": "Resource management. Focus on 'Scheduling', 'Deadlocks' and 'Files'.",
+      "desc": "Resource management. Focus on 'Scheduling', 'Deadlocks', 'IPC', and 'Kernels'.",
       "modules": [
         {
           "topic": "1. Process Scheduling & Threads",
-          "details": "Process State Diagram. Scheduling Algos (FCFS, Round Robin, SJF, Multilevel Queue). User vs Kernel Threads. Context Switching.",
+          "details": "Process State Diagram. Scheduling Algos (FCFS, Round Robin, SJF, Multilevel Queue). User vs Kernel Threads.",
           "faq": [
             "Diff between Preemptive and Non-Preemptive scheduling?",
             "Why is Round Robin good for Time Sharing systems?",
@@ -588,23 +658,59 @@ const roadmapData = {
           ]
         },
         {
-          "topic": "4. File Systems & Disk Management (Advanced)",
+          "topic": "4. File Systems & Disk Management",
           "details": "File Allocation Methods (Contiguous, Linked, Indexed). Unix Inodes. Disk Scheduling (SCAN, C-SCAN). RAID levels.",
           "faq": [
             "What is an Inode in Unix?",
             "Diff between Hard Link and Soft Link?",
             "Explain RAID 0 vs RAID 1 vs RAID 5."
           ]
+        },
+        {
+          "topic": "5. Inter-Process Communication (IPC)",
+          "details": "Pipes, Message Queues, Shared Memory, and Sockets. How isolated processes share data safely.",
+          "faq": [
+            "Difference between a Pipe and a Named Pipe (FIFO)?",
+            "How does Shared Memory avoid the overhead of system calls?",
+            "Explain the Producer-Consumer problem using Message Queues."
+          ]
+        },
+        {
+          "topic": "6. Linux Internals & CLI Commands",
+          "details": "File permissions (chmod, chown). Grep, Awk, Sed. Process management (top, kill, ps, strace).",
+          "faq": [
+            "What does 'chmod 755' do?",
+            "How would you find a specific process and kill it from the terminal?",
+            "Explain what a Zombie process and an Orphan process are."
+          ]
+        },
+        {
+          "topic": "7. System Calls & I/O Subsystems",
+          "details": "User mode vs Kernel mode transition, Interrupt handling, Synchronous vs Asynchronous I/O, Epoll.",
+          "faq": [
+            "What exactly happens when a System Call is executed?",
+            "Difference between Polling and Interrupt-driven I/O?",
+            "How does 'epoll' make Node.js or Nginx so fast?"
+          ]
+        },
+        {
+          "topic": "8. Virtualization & Containerization",
+          "details": "Hypervisors (Type 1 vs Type 2). Virtual Machines vs Docker Containers. Linux Namespaces and Cgroups.",
+          "faq": [
+            "Why are Docker containers so much lighter than Virtual Machines?",
+            "What is a Type 1 Bare Metal Hypervisor?",
+            "How do Linux Cgroups help manage resources in containers?"
+          ]
         }
       ]
     },
     {
       "subject": "Database Management Systems (DBMS)",
-      "desc": "Data integrity and speed. Focus on 'Keys', 'ACID', and 'Scaling'.",
+      "desc": "Data integrity and speed. Focus on 'Keys', 'ACID', 'Scaling', and 'Internals'.",
       "modules": [
         {
           "topic": "1. Normalization & Keys",
-          "details": "Keys (Primary, Foreign, Unique, Candidate, Composite). Normal Forms (1NF, 2NF, 3NF, BCNF). Anomalies.",
+          "details": "Keys (Primary, Foreign, Unique, Candidate). Normal Forms (1NF, 2NF, 3NF, BCNF). Anomalies.",
           "faq": [
             "Diff between Primary Key and Unique Key?",
             "Can Foreign Key be NULL?",
@@ -613,7 +719,7 @@ const roadmapData = {
         },
         {
           "topic": "2. SQL Queries & Transactions",
-          "details": "ACID Properties. Isolation Levels. Joins (Inner, Left, Right, Cross). Aggregate Functions & Windows Functions.",
+          "details": "ACID Properties. Isolation Levels. Joins (Inner, Left, Right, Cross). Aggregate Functions.",
           "faq": [
             "Order of execution in SQL (WHERE vs GROUP BY vs HAVING)?",
             "Write a query to find the 3rd highest salary without TOP/LIMIT.",
@@ -622,27 +728,63 @@ const roadmapData = {
         },
         {
           "topic": "3. Indexing & Optimization",
-          "details": "Clustered vs Non-Clustered Indexing. B-Trees vs B+ Trees. Query Optimization strategies.",
+          "details": "Clustered vs Non-Clustered Indexing. B-Trees vs B+ Trees. Query Execution Plans.",
           "faq": [
-            "How does B-Tree Indexing make search faster (O(log n))?",
+            "How does B-Tree Indexing make search faster?",
             "When does Indexing hurt performance?",
             "Difference between Delete, Truncate, and Drop?"
           ]
         },
         {
-          "topic": "4. Advanced DB & Scaling (System Design Prep)",
-          "details": "SQL vs NoSQL (CAP Theorem). Sharding vs Partitioning. Replication (Master-Slave). Stored Procedures & Triggers.",
+          "topic": "4. Advanced SQL & Window Functions",
+          "details": "Common Table Expressions (CTEs). RANK(), DENSE_RANK(), ROW_NUMBER(). Recursive queries.",
           "faq": [
-            "When to use MongoDB over MySQL?",
+            "Write a query to find the top 3 earners in every department using Window Functions.",
+            "Difference between RANK() and DENSE_RANK()?",
+            "When would you use a CTE instead of a Subquery?"
+          ]
+        },
+        {
+          "topic": "5. Concurrency Control & Locks",
+          "details": "Two-Phase Locking (2PL), Timestamp Ordering. Shared vs Exclusive Locks. Deadlocks in databases.",
+          "faq": [
+            "Explain the Two-Phase Locking protocol.",
+            "What is a Phantom Read and how do you prevent it?",
+            "How does a database resolve a deadlock between two transactions?"
+          ]
+        },
+        {
+          "topic": "6. Database Engines & Architecture",
+          "details": "Storage Engines (InnoDB vs MyISAM). Write-Ahead Logging (WAL). Checkpointing. How data is written to disk.",
+          "faq": [
+            "What is Write-Ahead Logging (WAL) and why is it crucial for crash recovery?",
+            "Difference between InnoDB and MyISAM in MySQL?",
+            "What is a Database Checkpoint?"
+          ]
+        },
+        {
+          "topic": "7. Distributed Databases & Scaling",
+          "details": "SQL vs NoSQL (CAP Theorem). Sharding vs Partitioning. Replication (Master-Slave/Multi-Master).",
+          "faq": [
             "Explain Horizontal vs Vertical Scaling.",
-            "What are Views and Materialized Views?"
+            "According to the CAP Theorem, why can't a distributed system have all three guarantees?",
+            "How do you handle a split-brain scenario in Master-Slave replication?"
+          ]
+        },
+        {
+          "topic": "8. Caching Layers & NoSQL Deep Dive",
+          "details": "Redis/Memcached basics. Read-through vs Write-through caching. Columnar DBs (Cassandra) vs Document DBs (MongoDB).",
+          "faq": [
+            "What is Cache Stampede and how do you prevent it?",
+            "Difference between a Write-Through and Write-Behind cache?",
+            "When would you strictly choose Cassandra over MongoDB?"
           ]
         }
       ]
     },
     {
       "subject": "Computer Networks (CN)",
-      "desc": "Communication. Focus on 'HTTP', 'TCP/IP', and 'Security'.",
+      "desc": "Communication. Focus on 'HTTP', 'TCP/IP', 'Security', and 'Infrastructure'.",
       "modules": [
         {
           "topic": "1. The Layers (OSI vs TCP/IP)",
@@ -664,26 +806,63 @@ const roadmapData = {
         },
         {
           "topic": "3. HTTP & Web Protocols",
-          "details": "HTTP Methods (GET, POST, PUT, PATCH). Status Codes (2xx, 3xx, 4xx, 5xx). Cookies vs Sessions.",
+          "details": "HTTP Methods. Status Codes (2xx, 3xx, 4xx, 5xx). Cookies vs Sessions. HTTP/1.1 vs HTTP/2.",
           "faq": [
             "Diff between GET and POST (Idempotency)?",
             "What is a Stateless Protocol?",
-            "How does HTTPS handshake work (SSL/TLS)?"
+            "How does HTTP/2 multiplexing work compared to HTTP/1.1?"
           ]
         },
         {
-          "topic": "4. IP & Network Security (Advanced)",
-          "details": "IPv4 vs IPv6. Subnetting (CIDR). NAT. Firewalls. Symmetric vs Asymmetric Encryption. VPN.",
+          "topic": "4. Socket Programming & Low-Level Networking",
+          "details": "TCP vs UDP sockets. Binding, Listening, Accepting. Non-blocking I/O. Crucial for C/Go servers.",
           "faq": [
-            "Calculate number of hosts in /24 subnet.",
-            "Public vs Private IP range.",
-            "What is a DDoS attack and how to mitigate it?"
+            "Explain the step-by-step lifecycle of creating a TCP server socket.",
+            "What is port exhaustion?",
+            "How does multiplexing (select/epoll) work for handling multiple connections?"
+          ]
+        },
+        {
+          "topic": "5. Advanced Application Layer & APIs",
+          "details": "WebSockets vs Server-Sent Events (SSE) vs Long Polling. WebRTC for peer-to-peer. DNS records (A, CNAME, TXT).",
+          "faq": [
+            "When would you use WebSockets instead of REST over HTTP?",
+            "Explain the difference between an A record and a CNAME record.",
+            "How does WebRTC establish a peer-to-peer connection through NAT (STUN/TURN)?"
+          ]
+        },
+        {
+          "topic": "6. IP, Routing & Network Security",
+          "details": "IPv4 vs IPv6. Subnetting (CIDR). NAT. Firewalls. Symmetric vs Asymmetric Encryption. VPNs.",
+          "faq": [
+            "Calculate number of hosts in a /24 subnet.",
+            "What is a DDoS attack and how to mitigate it?",
+            "Explain how Network Address Translation (NAT) works."
+          ]
+        },
+        {
+          "topic": "7. Load Balancing & Proxies",
+          "details": "Forward vs Reverse Proxy. Layer 4 vs Layer 7 Load Balancing. Consistent Hashing.",
+          "faq": [
+            "What is the difference between a Forward Proxy and a Reverse Proxy?",
+            "Why would you choose Layer 4 load balancing over Layer 7?",
+            "How does Consistent Hashing help in distributed load balancing?"
+          ]
+        },
+        {
+          "topic": "8. Cryptography & Advanced Security",
+          "details": "SSL/TLS Handshake deep dive. OAuth 2.0 vs JWT. CORS (Cross-Origin Resource Sharing).",
+          "faq": [
+            "Walk me through the exact steps of an SSL/TLS Handshake.",
+            "Why is JWT considered stateless, and what are its security risks?",
+            "What is a CORS preflight request?"
           ]
         }
       ]
     }
     ]
 }
+
 
 
 // STATE & INIT
